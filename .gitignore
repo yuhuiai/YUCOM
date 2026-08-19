@@ -1,0 +1,6 @@
+/dist/
+/release/
+/output/
+/.playwright-cli/
+/.gocache/
+/cmd/yucom/rsrc_windows_*.syso

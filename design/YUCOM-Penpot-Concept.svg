@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <linearGradient id="appBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF4FF"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <style>
+      .ui { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
+      .mono { font-family: "Cascadia Mono", "Consolas", monospace; }
+      .h1 { font-size: 22px; font-weight: 700; fill: #0F172A; }
+      .h2 { font-size: 16px; font-weight: 700; fill: #172033; }
+      .body { font-size: 14px; fill: #334155; }
+      .small { font-size: 12px; fill: #64748B; }
+      .label { font-size: 12px; font-weight: 600; fill: #64748B; letter-spacing: .2px; }
+      .button { font-size: 14px; font-weight: 600; text-anchor: middle; dominant-baseline: middle; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="900" fill="url(#appBg)"/>
+
+  <!-- Top application bar -->
+  <rect width="1440" height="72" fill="#FFFFFF"/>
+  <line x1="0" y1="71.5" x2="1440" y2="71.5" stroke="#E2E8F0"/>
+  <rect x="28" y="18" width="36" height="36" rx="10" fill="url(#brand)"/>
+  <!-- Original YUCOM serial mark with a restrained flying-eave accent. -->
+  <path d="M34.5 29.5c4.5 0 7.5-2 11.5-5 4 3 7 5 11.5 5M33.5 31h25" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+  <circle cx="37" cy="36" r="1.6" fill="#FFFFFF"/><circle cx="55" cy="36" r="1.6" fill="#FFFFFF"/>
+  <circle cx="37" cy="41" r="1.6" fill="#FFFFFF"/><circle cx="55" cy="41" r="1.6" fill="#FFFFFF"/>
+  <circle cx="37" cy="46" r="1.6" fill="#FFFFFF"/><circle cx="55" cy="46" r="1.6" fill="#FFFFFF"/>
+  <path d="M40 36h3c3 0 3 4 6 4h3M40 41h12M40 46h3c3 0 3-4 6-4h3" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="78" y="37" class="ui h1">YUCOM</text>
+  <text x="78" y="55" class="ui small">通用串口诊断与回环测试</text>
+
+  <rect x="1160" y="20" width="116" height="32" rx="16" fill="#FFF7ED" stroke="#FED7AA"/>
+  <circle cx="1178" cy="36" r="5" fill="#F59E0B"/>
+  <text x="1190" y="41" class="ui body" font-weight="600" fill="#9A3412">未连接</text>
+  <circle cx="1304" cy="36" r="16" fill="#F1F5F9"/>
+  <path d="M1299 36h10" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="1352" cy="36" r="16" fill="#F1F5F9"/>
+  <rect x="1347.5" y="31.5" width="9" height="9" rx="1.5" fill="none" stroke="#64748B" stroke-width="1.6"/>
+  <circle cx="1400" cy="36" r="16" fill="#F1F5F9"/>
+  <path d="M1395 31l10 10M1405 31l-10 10" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Left settings rail -->
+  <rect x="24" y="96" width="326" height="780" rx="18" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="48" y="132" class="ui h2">连接设置</text>
+  <text x="302" y="132" class="ui small" text-anchor="end">默认 115200 · 8N1</text>
+
+  <text x="48" y="166" class="ui label">串口设备</text>
+  <rect x="48" y="178" width="190" height="42" rx="9" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="62" y="204" class="ui body">选择串口</text>
+  <path d="M216 195l5 5 5-5" fill="none" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="246" y="178" width="80" height="42" rx="9" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <path d="M264 196a8 8 0 0 1 13-3M277 193v5h-5M278 202a8 8 0 0 1-13 3M265 205v-5h5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="286" y="204" class="ui small">刷新</text>
+
+  <rect x="48" y="232" width="278" height="44" rx="10" fill="url(#brand)" filter="url(#smallShadow)"/>
+  <circle cx="117" cy="254" r="9" fill="#FFFFFF" fill-opacity=".18"/>
+  <path d="M113 250v3h8v-3M115 250v-3M119 250v-3M117 253v7" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="194" y="255" class="ui button" fill="#FFFFFF">连接串口</text>
+
+  <text x="48" y="312" class="ui label">波特率</text>
+  <rect x="48" y="324" width="278" height="40" rx="9" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="62" y="349" class="ui body">115200</text>
+  <path d="M304 341l5 5 5-5" fill="none" stroke="#64748B" stroke-width="1.8"/>
+
+  <text x="48" y="396" class="ui label">数据位</text>
+  <text x="190" y="396" class="ui label">停止位</text>
+  <rect x="48" y="408" width="128" height="40" rx="9" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="190" y="408" width="136" height="40" rx="9" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="62" y="433" class="ui body">8</text><text x="204" y="433" class="ui body">1</text>
+  <path d="M154 425l5 5 5-5M304 425l5 5 5-5" fill="none" stroke="#64748B" stroke-width="1.8"/>
+
+  <text x="48" y="480" class="ui label">校验方式</text>
+  <text x="190" y="480" class="ui label">流量控制</text>
+  <rect x="48" y="492" width="128" height="40" rx="9" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="190" y="492" width="136" height="40" rx="9" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="62" y="517" class="ui body">无校验</text><text x="204" y="517" class="ui body">无流控</text>
+  <path d="M154 509l5 5 5-5M304 509l5 5 5-5" fill="none" stroke="#64748B" stroke-width="1.8"/>
+
+  <line x1="48" y1="560" x2="326" y2="560" stroke="#E2E8F0"/>
+  <text x="48" y="594" class="ui h2">线路信号</text>
+  <text x="326" y="594" class="ui small" text-anchor="end">等待连接</text>
+  <g class="ui small">
+    <circle cx="55" cy="620" r="6" fill="#CBD5E1"/><text x="68" y="624">DTR</text>
+    <circle cx="144" cy="620" r="6" fill="#CBD5E1"/><text x="157" y="624">DSR</text>
+    <circle cx="233" cy="620" r="6" fill="#CBD5E1"/><text x="246" y="624">RTS</text>
+    <circle cx="55" cy="650" r="6" fill="#CBD5E1"/><text x="68" y="654">CTS</text>
+    <circle cx="144" cy="650" r="6" fill="#CBD5E1"/><text x="157" y="654">DCD</text>
+    <circle cx="233" cy="650" r="6" fill="#CBD5E1"/><text x="246" y="654">RING</text>
+  </g>
+
+  <line x1="48" y1="678" x2="326" y2="678" stroke="#E2E8F0"/>
+  <text x="48" y="712" class="ui h2">流量统计</text>
+  <rect x="48" y="728" width="132" height="70" rx="12" fill="#EFF6FF"/>
+  <text x="62" y="752" class="ui small" fill="#1D4ED8">TX · 发送</text>
+  <text x="62" y="781" class="ui h1" fill="#2563EB">0 <tspan class="body">字节</tspan></text>
+  <rect x="194" y="728" width="132" height="70" rx="12" fill="#F0FDF4"/>
+  <text x="208" y="752" class="ui small" fill="#15803D">RX · 接收</text>
+  <text x="208" y="781" class="ui h1" fill="#16A34A">0 <tspan class="body">字节</tspan></text>
+  <rect x="48" y="814" width="278" height="38" rx="9" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="187" y="834" class="ui button" fill="#475569">清零计数</text>
+
+  <!-- Receive card -->
+  <rect x="374" y="96" width="1042" height="448" rx="18" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="404" cy="129" r="15" fill="#ECFDF5"/>
+  <path d="M404 120v12M399 128l5 5 5-5M397 137h14" fill="none" stroke="#16A34A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="430" y="135" class="ui h2">接收监视器</text>
+  <rect x="551" y="116" width="34" height="24" rx="12" fill="#DCFCE7"/>
+  <text x="568" y="133" class="ui small" fill="#15803D" text-anchor="middle" font-weight="700">RX</text>
+
+  <rect x="1096" y="112" width="102" height="34" rx="17" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <circle cx="1115" cy="129" r="7" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="1130" y="134" class="ui small">HEX 显示</text>
+  <rect x="1208" y="112" width="108" height="34" rx="17" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <circle cx="1227" cy="129" r="7" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="1242" y="134" class="ui small">暂停显示</text>
+  <rect x="1326" y="112" width="66" height="34" rx="9" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="1359" y="130" class="ui button" fill="#475569">清空</text>
+
+  <rect x="398" y="164" width="994" height="348" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <circle cx="422" cy="188" r="4" fill="#22C55E"/>
+  <text x="438" y="192" class="mono small" fill="#64748B">等待串口数据…</text>
+  <rect x="414" y="207" width="962" height="32" rx="6" fill="#EFF6FF"/>
+  <text x="422" y="228" class="mono body" fill="#64748B">09:41:22.108</text>
+  <text x="532" y="228" class="mono body" fill="#2563EB">RX</text>
+  <text x="566" y="228" class="mono body" fill="#0F172A">YUCOM serial test</text>
+  <text x="422" y="260" class="mono body" fill="#64748B">09:41:23.117</text>
+  <text x="532" y="260" class="mono body" fill="#2563EB">RX</text>
+  <text x="566" y="260" class="mono body" fill="#0F172A">48 65 6C 6C 6F 20 59 55 43 4F 4D</text>
+  <rect x="414" y="476" width="180" height="24" rx="12" fill="#E8EEF8"/>
+  <text x="427" y="493" class="mono small" fill="#52657D">UTF-8 · 自动滚动开启</text>
+
+  <!-- Send card -->
+  <rect x="374" y="568" width="1042" height="308" rx="18" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="404" cy="601" r="15" fill="#EFF6FF"/>
+  <path d="M404 610v-12M399 602l5-5 5 5M397 594h14" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="430" y="607" class="ui h2">发送编辑器</text>
+  <rect x="551" y="588" width="34" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="568" y="605" class="ui small" fill="#1D4ED8" text-anchor="middle" font-weight="700">TX</text>
+  <rect x="1290" y="584" width="102" height="34" rx="17" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <circle cx="1309" cy="601" r="7" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="1324" y="606" class="ui small">HEX 发送</text>
+
+  <rect x="398" y="638" width="994" height="102" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="418" y="670" class="mono body" fill="#0F172A">YUCOM serial test</text>
+  <text x="418" y="718" class="ui small">输入要发送的文本或十六进制数据</text>
+
+  <text x="398" y="778" class="ui label">结束符</text>
+  <rect x="454" y="754" width="132" height="40" rx="9" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="468" y="779" class="ui body">无结束符</text>
+  <path d="M564 771l5 5 5-5" fill="none" stroke="#64748B" stroke-width="1.8"/>
+  <text x="610" y="778" class="ui label">周期</text>
+  <rect x="654" y="754" width="100" height="40" rx="9" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="668" y="779" class="ui body">1000</text>
+  <text x="764" y="779" class="ui small">ms</text>
+  <rect x="802" y="758" width="36" height="20" rx="10" fill="#CBD5E1"/>
+  <circle cx="812" cy="768" r="8" fill="#FFFFFF"/>
+  <text x="848" y="779" class="ui small">定时发送</text>
+
+  <rect x="1148" y="752" width="108" height="44" rx="10" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="1202" y="775" class="ui button" fill="#475569">标准测试帧</text>
+  <rect x="1268" y="752" width="124" height="44" rx="10" fill="url(#brand)" filter="url(#smallShadow)"/>
+  <text x="1330" y="775" class="ui button" fill="#FFFFFF">发送</text>
+
+  <!-- Bottom status -->
+  <text x="374" y="892" class="ui small">状态：未打开串口</text>
+  <text x="1416" y="892" class="ui small" text-anchor="end">YUCOM 1.2.0 · Windows</text>
+</svg>

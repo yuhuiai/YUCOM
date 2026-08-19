@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=YUCOM 串口测试工具
+Comment=打开YUCOM并自动使用包内离线运行环境
+Exec=bash -c 'cd "$(dirname "%k")" && exec bash ./一键运行YUCOM.sh'
+Icon=utilities-terminal
+Terminal=true
+Categories=Utility;System;
+StartupNotify=true

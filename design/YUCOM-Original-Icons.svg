@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <style>
+      .ui { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
+      .name { font-size: 15px; font-weight: 650; fill: #172033; text-anchor: middle; }
+      .note { font-size: 13px; fill: #64748B; }
+    </style>
+  </defs>
+  <rect width="960" height="480" rx="24" fill="#F8FAFC"/>
+  <text x="48" y="58" class="ui" font-size="24" font-weight="700" fill="#0F172A">YUCOM 原创矢量图标</text>
+  <text x="48" y="86" class="ui note">原创串行通信标记，轻度融入飞檐轮廓 · 无外部图标库、品牌素材或网络素材</text>
+
+  <g transform="translate(76 132)">
+    <rect width="112" height="112" rx="28" fill="url(#brand)"/>
+    <path d="M24 37c12 0 20-6 32-16 12 10 20 16 32 16M20 43h72" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+    <circle cx="28" cy="56" r="3.5" fill="#FFFFFF"/><circle cx="84" cy="56" r="3.5" fill="#FFFFFF"/>
+    <circle cx="28" cy="70" r="3.5" fill="#FFFFFF"/><circle cx="84" cy="70" r="3.5" fill="#FFFFFF"/>
+    <circle cx="28" cy="84" r="3.5" fill="#FFFFFF"/><circle cx="84" cy="84" r="3.5" fill="#FFFFFF"/>
+    <path d="M35 56h9c8 0 8 11 16 11h17M35 70h42M35 84h9c8 0 8-11 16-11h17" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <text x="56" y="144" class="ui name">串行飞檐标记</text>
+  </g>
+
+  <g transform="translate(244 132)">
+    <rect width="112" height="112" rx="28" fill="#FFFFFF" stroke="#D8E1EE"/>
+    <circle cx="56" cy="56" r="26" fill="#ECFDF5"/>
+    <path d="M56 39v22M47 54l9 9 9-9M43 70h26" fill="none" stroke="#16A34A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="56" y="144" class="ui name">接收</text>
+  </g>
+
+  <g transform="translate(412 132)">
+    <rect width="112" height="112" rx="28" fill="#FFFFFF" stroke="#D8E1EE"/>
+    <circle cx="56" cy="56" r="26" fill="#EFF6FF"/>
+    <path d="M56 73V51M47 58l9-9 9 9M43 42h26" fill="none" stroke="#2563EB" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="56" y="144" class="ui name">发送</text>
+  </g>
+
+  <g transform="translate(580 132)">
+    <rect width="112" height="112" rx="28" fill="#FFFFFF" stroke="#D8E1EE"/>
+    <circle cx="56" cy="56" r="26" fill="#F5F3FF"/>
+    <path d="M43 47a18 18 0 0 1 26-5M69 42v10H59M69 65a18 18 0 0 1-26 5M43 70V60h10" fill="none" stroke="#4F46E5" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="56" y="144" class="ui name">刷新</text>
+  </g>
+
+  <g transform="translate(748 132)">
+    <rect width="112" height="112" rx="28" fill="#FFFFFF" stroke="#D8E1EE"/>
+    <circle cx="56" cy="56" r="26" fill="#EFF6FF"/>
+    <path d="M46 49v8h20v-8M51 49v-8M61 49v-8M56 57v16" fill="none" stroke="#2563EB" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="56" y="144" class="ui name">连接</text>
+  </g>
+
+  <rect x="48" y="336" width="864" height="96" rx="16" fill="#FFFFFF" stroke="#D8E1EE"/>
+  <circle cx="82" cy="368" r="6" fill="#2563EB"/><text x="100" y="373" class="ui note">主体是三路串行数据通道；顶部只保留轻量飞檐曲线，古楼意象不抢功能识别。</text>
+  <circle cx="82" cy="400" r="6" fill="#16A34A"/><text x="100" y="405" class="ui note">蓝色表示发送/操作，绿色表示接收/正常状态，橙色表示待连接。</text>
+</svg>
